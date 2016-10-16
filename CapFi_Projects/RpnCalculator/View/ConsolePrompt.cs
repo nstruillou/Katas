@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RpnCalculator.Observer;
 
 namespace RpnCalculator.View
@@ -28,17 +24,14 @@ namespace RpnCalculator.View
         {
             if (command == "quit")
             {
-
             }
 
             Console.WriteLine(command);
         }
 
-
         public void Update(string output)
         {
             Console.WriteLine(output);
         }
-
     }
 }

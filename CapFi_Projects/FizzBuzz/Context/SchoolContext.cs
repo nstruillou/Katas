@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using FizzBuzz.Model;
 
 namespace FizzBuzz.Context
@@ -10,6 +6,7 @@ namespace FizzBuzz.Context
     public class SchoolContext : ISchoolContext
     {
         private const int nbStudents = 29;
+
         public SchoolContext()
         {
             this.OnContextCreated();

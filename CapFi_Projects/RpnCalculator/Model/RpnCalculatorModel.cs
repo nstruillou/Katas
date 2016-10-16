@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RpnCalculator.Model
 {
@@ -14,7 +12,6 @@ namespace RpnCalculator.Model
             string result = "";
             if (string.Empty.Equals(expression))
             {
-
             }
             else
             {
@@ -52,7 +49,6 @@ namespace RpnCalculator.Model
                     return new RpnOperator(lastElement).ApplyOperation((int)leftElement, (int)rightElement);
                 }
             }
-
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzz.Interpretors;
+﻿using FizzBuzz.Interpretors;
 
 namespace FizzBuzz.Model
 {
@@ -11,7 +6,8 @@ namespace FizzBuzz.Model
     {
         private IFizzBuzzInterpretor fizzBuzzInterpretor;
 
-        public FizzBuzzCourse() : base(Discipline.Math)
+        public FizzBuzzCourse()
+            : base(Discipline.Math)
         {
             this.fizzBuzzInterpretor = new FizzBuzzInterpretor();
         }

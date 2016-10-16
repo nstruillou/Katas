@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RpnCalculator.Model
+﻿namespace RpnCalculator.Model
 {
     public delegate int? Operation(int leftNumber, int rightNumber);
 
@@ -14,17 +8,20 @@ namespace RpnCalculator.Model
 
         public RpnOperator(string inputOperator)
         {
-            switch(inputOperator)
+            switch (inputOperator)
             {
                 case "+":
-                    this.operation += (a, b) =>  a + b ;
+                    this.operation += (a, b) => a + b;
                     break;
+
                 case "-":
                     this.operation += (a, b) => a - b;
                     break;
+
                 case "*":
                     this.operation += (a, b) => a * b;
                     break;
+
                 case "/":
                     this.operation += (a, b) =>
                         {
@@ -38,8 +35,9 @@ namespace RpnCalculator.Model
                             }
                         };
                     break;
+
                 default:
-                    this.operation += (a,b) => null;
+                    this.operation += (a, b) => null;
                     break;
             }
         }

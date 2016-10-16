@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FizzBuzz.Model
+﻿namespace FizzBuzz.Model
 {
     public delegate string NumberInterpretor(int number);
 
@@ -22,6 +16,5 @@ namespace FizzBuzz.Model
             string interpretedNumber = this.NumberInterpretor(number);
             return "the student #" + this.PersonID + " answers " + interpretedNumber;
         }
-
     }
 }
