@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{212747
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpnCalculator", "RpnCalculator\RpnCalculator.csproj", "{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpnCalculator.Test", "RpnCalculator.Test\RpnCalculator.Test.csproj", "{50D4E046-4227-48BA-9D43-273960E15B5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,12 +35,22 @@ Global
 		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D4E046-4227-48BA-9D43-273960E15B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D4E046-4227-48BA-9D43-273960E15B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D4E046-4227-48BA-9D43-273960E15B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D4E046-4227-48BA-9D43-273960E15B5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{175D2C03-F071-4963-830F-1C4D986CB7C3} = {A96DDF8B-2E9E-4666-9132-9D90A5A43E1D}
+		{3D779BB0-0D4D-40D6-8B9B-ABB7D87FDB8B} = {A96DDF8B-2E9E-4666-9132-9D90A5A43E1D}
 		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95} = {F2E32EEB-43EF-4874-8DE7-0A31AA538F17}
+		{50D4E046-4227-48BA-9D43-273960E15B5D} = {F2E32EEB-43EF-4874-8DE7-0A31AA538F17}
 	EndGlobalSection
 EndGlobal
