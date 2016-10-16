@@ -154,3 +154,12 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/CapFi_Projects/packages/NSubstitute.1.10.0.0
+/CapFi_Projects/packages/NUnit.3.4.1
+/CapFi_Projects/packages/NUnit.ConsoleRunner.3.4.1
+/CapFi_Projects/packages/NUnit.Extension.NUnitProjectLoader.3.4.1
+/CapFi_Projects/packages/NUnit.Extension.NUnitV2Driver.3.4.1
+/CapFi_Projects/packages/NUnit.Extension.NUnitV2ResultWriter.3.4.1
+/CapFi_Projects/packages/NUnit.Extension.TeamCityEventListener.1.0.1
+/CapFi_Projects/packages/NUnit.Extension.VSProjectLoader.3.4.1
+/CapFi_Projects/packages/NUnit.Runners.3.4.1

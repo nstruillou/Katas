@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{A96DDF8B-2E9E-4666-9132-9D90A5A43E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{175D2C03-F071-4963-830F-1C4D986CB7C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F2E32EEB-43EF-4874-8DE7-0A31AA538F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Test", "FizzBuzz.Test\FizzBuzz.Test.csproj", "{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}"
+	ProjectSection(ProjectDependencies) = postProject
+		{175D2C03-F071-4963-830F-1C4D986CB7C3} = {175D2C03-F071-4963-830F-1C4D986CB7C3}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{212747B9-2D6E-475E-9C61-E3E730001111}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175D2C03-F071-4963-830F-1C4D986CB7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175D2C03-F071-4963-830F-1C4D986CB7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175D2C03-F071-4963-830F-1C4D986CB7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175D2C03-F071-4963-830F-1C4D986CB7C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{175D2C03-F071-4963-830F-1C4D986CB7C3} = {A96DDF8B-2E9E-4666-9132-9D90A5A43E1D}
+		{EF23DA59-0600-47EA-9BA7-D4CFE8198C95} = {F2E32EEB-43EF-4874-8DE7-0A31AA538F17}
+	EndGlobalSection
+EndGlobal
