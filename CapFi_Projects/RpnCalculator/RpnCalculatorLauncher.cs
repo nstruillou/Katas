@@ -1,4 +1,6 @@
-﻿using RpnCalculator.View;
+﻿using RpnCalculator.Controller;
+using RpnCalculator.Model;
+using RpnCalculator.View;
 
 namespace RpnCalculator
 {
@@ -6,7 +8,12 @@ namespace RpnCalculator
     {
         private static void Main(string[] args)
         {
-            ConsolePrompt view = new ConsolePrompt();
+            AbstractCalculator calculator = new RpnCalculatorModel();
+            RpnControler rpnControler = new RpnControler(calculator);
+
+            ConsolePrompt view = new ConsolePrompt(rpnControler);
+            calculator.AddObserver(view);
+            
             view.Run();
         }
     }

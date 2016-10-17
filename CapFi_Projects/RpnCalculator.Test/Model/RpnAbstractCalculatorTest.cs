@@ -1,6 +1,7 @@
 ﻿using System;
 using NSubstitute;
 using NUnit.Framework;
+using RpnCalculator.Controller;
 using RpnCalculator.Model;
 using RpnCalculator.Observer;
 using RpnCalculator.View;
@@ -11,17 +12,19 @@ namespace RpnCalculator.Test.Model
     public class RpnAbstractCalculatorTest
     {
         private AbstractCalculator calculator;
+        private RpnControler controler;
 
         [SetUp]
         public void InitTests()
         {
             this.calculator = new RpnCalculatorModel();
+            this.controler = new RpnControler(this.calculator);
         }
 
         [Test]
         public void Should_add_new_observer_when_observer_not_null()
         {
-            IObserver observer = new ConsolePrompt();
+            IObserver observer = new ConsolePrompt(this.controler);
             this.calculator.AddObserver(observer);
             int expected = 1;
             int actual = this.calculator.Observers.Count;
@@ -41,7 +44,7 @@ namespace RpnCalculator.Test.Model
         [Test]
         public void Should_return_true_when_observer_removed()
         {
-            IObserver observer = new ConsolePrompt();
+            IObserver observer = new ConsolePrompt(this.controler);
             this.calculator.AddObserver(observer);
             var actual = this.calculator.RemoveObserver(observer);
             Assert.IsTrue(actual);

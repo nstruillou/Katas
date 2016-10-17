@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\RpnController.cs" />
+    <Compile Include="Controller\RpnControler.cs" />
+    <Compile Include="Event\CommandChangedEventArgs.cs" />
     <Compile Include="Model\AbstractCalculator.cs" />
+    <Compile Include="Model\ExpressionValidator.cs" />
     <Compile Include="Model\RpnOperator.cs" />
     <Compile Include="Model\RpnCalculatorModel.cs" />
     <Compile Include="Observer\IObservable.cs" />
